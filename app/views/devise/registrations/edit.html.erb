@@ -10,7 +10,17 @@
 
   <div class="field">
     <%= f.label :nome %><br />
-    <%= f.nome_field :nome, autofocus: true %>
+    <%= f.text_field :nome %>
+  </div>
+
+  <div class="field">
+    <%= f.label :endereco %><br />
+    <%= f.text_field :endereco %>
+  </div>
+
+  <div class="field">
+    <%= f.label :telefone %><br />
+    <%= f.text_field :telefone %>
   </div>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
