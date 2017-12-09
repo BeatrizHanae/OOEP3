@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :produtos
+  resources :products
   get 'como_funciona/index'
 
   devise_for :users
