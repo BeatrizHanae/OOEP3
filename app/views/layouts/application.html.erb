@@ -9,6 +9,21 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header class="navbar navbar-fixed-top navbar-inverse">
+     <div class="container">
+       <%= link_to "Dia De Doar", '#', id: "logo" %>
+       <nav>
+         <ul class="nav navbar-nav navbar-right">
+           <li><%= link_to "Pagina Inicial",   '#' %></li>
+           <li><%= link_to "Categorias",   '#' %></li>
+           <li><%= link_to "Como funciona",   '#' %></li>
+           <li><a href="/users/sign_up">Cadastrar</a></li>
+           <li><%= link_to "Entrar",   '#' %></li>
+         </ul>
+       </nav>
+     </div>
+   </header>
+   <div class="container">
+     <%= yield %>
   </body>
 </html>
