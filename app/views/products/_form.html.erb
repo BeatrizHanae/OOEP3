@@ -36,6 +36,11 @@
     <%= form.text_field :doador, id: :product_doador %>
   </div>
 
+  <div class="field">
+    <%= form.label :avatar %><br>
+    <%= form.file_field :avatar %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

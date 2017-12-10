@@ -8,6 +8,9 @@
 <table>
   <thead>
     <tr>
+	<td>&emsp;</td>
+	<td>&emsp;</td>
+	<td>&emsp;</td>
       <th>Nome</th>
 	<td>&emsp;</td>
 	<td>&emsp;</td>
@@ -28,6 +31,9 @@
   <tbody>
     <% @products.each do |product| %>
       <tr>
+        <td><%= image_tag product.avatar.url(:thumb) %></td>
+	<td>&emsp;</td>
+	<td>&emsp;</td>
         <td><%= product.nome %></td>
 	<td>&emsp;</td>
 	<td>&emsp;</td>
