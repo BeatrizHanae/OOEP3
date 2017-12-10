@@ -1,4 +1,4 @@
-<% if user_signed_in? %>
+
 <p id="notice"><%= notice %></p>
 <br>
 <br>
@@ -53,11 +53,14 @@
 	<td>&emsp;</td>
         <td><%= link_to 'Mostrar', product %></td>
 	<td>&emsp;</td>
-        <td><%= link_to 'Editar', edit_product_path(product) %></td>
-	<td>&emsp;</td>
-        <td><%= link_to 'Excluir', product, method: :delete, data: { confirm: 'Tem certeza que quer excluir?' } %></td>
+
+	<% if user_signed_in? %>
+          <td><%= link_to 'Editar', edit_product_path(product) %></td>
+	  <td>&emsp;</td>
+          <td><%= link_to 'Excluir', product, method: :delete, data: { confirm: 'Tem certeza que quer excluir?' } %></td>
 <td>&emsp;</td>
-        <td><%= link_to 'EUQUERO', eu_quero_index_path %></td>
+	  <td><%= link_to 'EUQUERO', eu_quero_index_path %></td>
+	<% end %>
       </tr>
     <% end %>
   </tbody>
@@ -66,11 +69,6 @@
 <br>
 
 <%= link_to 'Novo Produto', new_product_path %>
-<% else %>
-<br>
-<br>
-<br>
-<br>
-<h1>Cadastre-se ou entre para ver os produtos!!!</h1>
 
-<% end %>
+
+
