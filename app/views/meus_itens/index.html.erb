@@ -30,6 +30,7 @@
 
   <tbody>
     <% @products.each do |product| %>
+      <% if user_signed_in? && product.doador == current_user.nome %>
       <tr>
         <td><%= image_tag product.avatar.url(:thumb) %></td>
 	<td>&emsp;</td>
@@ -54,16 +55,13 @@
         <td><%= link_to 'Mostrar', product %></td>
 	<td>&emsp;</td>
 
-	<% if user_signed_in? && product.doador != current_user.nome %>
-	   <td><%= link_to 'EUQUERO', eu_quero_index_path %></td>
-	<% end %>
-	<% if user_signed_in? && product.doador == current_user.nome %>
           <td><%= link_to 'Editar', edit_product_path(product) %></td>
 	  <td>&emsp;</td>
           <td><%= link_to 'Excluir', product, method: :delete, data: { confirm: 'Tem certeza que quer excluir?' } %></td>
 <td>&emsp;</td>
-	<% end %>
+
       </tr>
+      <% end %>
     <% end %>
   </tbody>
 </table>

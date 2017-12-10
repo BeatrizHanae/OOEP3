@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'como_funciona/index'
   get 'meu_perfil/index'
   get 'eu_quero/index'
+  get 'meus_itens/index'
 
   devise_for :users
   root 'home#index'
