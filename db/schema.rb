@@ -26,15 +26,6 @@ ActiveRecord::Schema.define(version: 20171210070836) do
     t.datetime "avatar_updated_at"
   end
 
-  create_table "produtos", force: :cascade do |t|
-    t.string "nome"
-    t.string "tipo"
-    t.string "estado"
-    t.text "descricao"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false

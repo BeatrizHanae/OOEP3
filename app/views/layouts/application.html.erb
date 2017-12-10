@@ -15,12 +15,10 @@
        <nav>
          <ul class="nav navbar-nav navbar-right">
            <li><%= link_to "Página inicial",   root_path %></li>
-
            <li><%= link_to "Produtos",   products_path %></li>
-           <li><%= link_to "Categorias (nao tem)",   '#' %></li>
            <li><%= link_to "Como Funciona",   como_funciona_index_path %></li>
 
-           
+
 
 	        <% if user_signed_in? %>
            		<li><%= link_to "Meu Perfil",   meu_perfil_index_path %></li>
@@ -29,7 +27,7 @@
 
            		<li><%= link_to "Entrar",   user_session_path %></li>
 		<% end %>
-           
+
          </ul>
        </nav>
      </div>
