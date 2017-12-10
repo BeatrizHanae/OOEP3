@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Antes de rodar a aplicação, execute estes comandos no terminal
 
-Things you may want to cover:
+Para instalar programa de tratar imagem
+* sudo apt-get install imagemagick
 
-* Ruby version
+Informações 
+* Versão do Ruby:   2.4.2
+* Versão do Rails:  5.1.4
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Link do vídeo com demonstração do projeto:
+* inserir link aqui
