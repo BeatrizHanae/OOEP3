@@ -14,18 +14,21 @@
        <%= link_to "Dia De Doar", '/', id: "logo" %>
        <nav>
          <ul class="nav navbar-nav navbar-right">
-           <li><a href="/">Página inicial</a></li>
-           <li><a href="/products">Produtos</a></li>
-           <li><%= link_to "Categorias",   '#' %></li>
-           <li><a href="como_funciona/index">Como Funciona</a></li>
+           <li><%= link_to "Página inicial",   root_path %></li>
+
+           <li><%= link_to "Produtos",   products_path %></li>
+           <li><%= link_to "Categorias (nao tem)",   '#' %></li>
+           <li><%= link_to "Como Funciona",   como_funciona_index_path %></li>
+
            
 
 	        <% if user_signed_in? %>
-		        <li><%= link_to "Deslogar", destroy_user_session_path, method: :delete %></li>
+           		<li><%= link_to "Meu Perfil",   meu_perfil_index_path %></li>
 		<% else %>
-		        <li><a href="/users/sign_up">Cadastrar</a></li>
-		        <li><a href="/users/sign_in">Entrar</a></li>
-		        <% end %>
+           		<li><%= link_to "Cadastrar",   new_user_registration_path %></li>
+
+           		<li><%= link_to "Entrar",   user_session_path %></li>
+		<% end %>
            
          </ul>
        </nav>

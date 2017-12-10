@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   resources :products
   get 'como_funciona/index'
+  get 'meu_perfil/index'
 
   devise_for :users
   root 'home#index'
