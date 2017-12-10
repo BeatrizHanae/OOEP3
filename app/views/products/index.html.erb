@@ -1,3 +1,4 @@
+<% if user_signed_in? %>
 <p id="notice"><%= notice %></p>
 <br>
 <br>
@@ -57,3 +58,11 @@
 <br>
 
 <%= link_to 'Novo Produto', new_product_path %>
+<% else %>
+<br>
+<br>
+<br>
+<br>
+<h1>Cadastre-se ou entre para ver os produtos!!!</h1>
+
+<% end %>
