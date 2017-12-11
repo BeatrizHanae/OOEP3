@@ -23,6 +23,7 @@ Para executar:
   `git clone https://gitlab.com/marcelo_604/ep3.git `  
   `rake db:migrate`  
   `bundle install`  
+  `cd ep3`
   `rails s`  
 
 
