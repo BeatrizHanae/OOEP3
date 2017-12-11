@@ -3,6 +3,10 @@ Membros/matrícula: Beatriz Hanae Fujimoto 16/0113814
 
 # DIA DE DOAR
 
+Link do vídeo com demonstração do projeto: (obs: executar comando "sudo apt-get install imagemagick" antes)
+* https://www.youtube.com/watch?v=sv3XB-S0XOo&t=1s
+
+
 ## Introdução:
 <td>&emsp;</td>O site Dia De Doar é uma aplicação elaborado na linguagem Ruby on rails, que foi proposto como projeto de avaliação para os alunos da disciplina de Orientação à Objetos.O site permite a troca de produtos. Quando uma pessoa não quer mais algum objeto ja usado, ou até mesmo sabe que não usará, e ao invés de jogar fora ou vender, ele "doa".
 
@@ -21,9 +25,9 @@ Para executar:
 * No terminal:
 
   `git clone https://gitlab.com/marcelo_604/ep3.git `  
+  `cd ep3`  
   `rake db:migrate`  
   `bundle install`  
-  `cd ep3`  
   `rails s`  
 
 
@@ -36,5 +40,3 @@ Para executar:
 <td>&emsp;</td> Quando o um usuário tiver interesse em algum produto disponível no site, ele poderá clicar em "EUQUERO" e isso encaminha um e-mail, com dados do e-mail e telefone do interessado, para o doador responsável pelo produto. Assim entre eles o contato é direto e acordos como onde buscar, ou outras informações podem ser acordadas.  
 
 
-Link do vídeo com demonstração do projeto:
-* inserir link aqui
